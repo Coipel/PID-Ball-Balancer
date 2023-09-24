@@ -42,7 +42,7 @@ float PID::calculate(float error) {
 }
 
 void PID::clear() {
-  // Remove the lingering effects of a prior use of the PID class. Useful for say chaning PID constants in autotuning.
+  // Remove the lingering effects of a prior use of the PID class. Useful for say changing PID constants in autotuning.
   PID::prior_error = 0;
   PID::accumulated_error = 0;
 }
