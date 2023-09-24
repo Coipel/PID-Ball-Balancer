@@ -23,7 +23,7 @@ void PID::set_operation_details(float lower_saturation, float zero_actuation, fl
   PID::lower_saturation = lower_saturation;
   PID::upper_saturation = upper_saturation;
   PID::zero_actuation = zero_actuation;
-  PID::offset = offset = fmap(PID::zero_actuation, PID::lower_saturation, PID::upper_saturation, -100, 100);
+  PID::offset = fmap(PID::zero_actuation, PID::lower_saturation, PID::upper_saturation, -100, 100);
 }
 
 float PID::calculate(float error) {  
